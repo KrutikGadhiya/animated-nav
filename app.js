@@ -13,6 +13,6 @@ nav.querySelectorAll('li a').forEach((a, i) => {
         let nav_indicator = nav.querySelector('.nav-indicator')
 
         // nav_indicator.style.left = `calc(${(i * 120) + 60}px - 45px)`
-        nav_indicator.style.left = `calc(${(i * 20)}% + ${i}%)`
+        nav_indicator.style.left = `calc(${(i * 20)}% - ${i}%)`
     }
 })

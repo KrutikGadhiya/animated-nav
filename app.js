@@ -12,7 +12,11 @@ nav.querySelectorAll('li a').forEach((a, i) => {
 
         let nav_indicator = nav.querySelector('.nav-indicator')
 
-        // nav_indicator.style.left = `calc(${(i * 120) + 60}px - 45px)`
-        nav_indicator.style.left = `calc(${(i * 20)}%)`
+        if (window.innerWidth > 600) {
+            nav_indicator.style.left = `calc(${(i * 120) + 60}px - 45px)`
+        } else {
+            nav_indicator.style.left = `calc(${(i * 20)}%)`
+        }
+
     }
 })
